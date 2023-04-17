@@ -1,0 +1,78 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  letter-spacing: 0em;
+  line-height: 1.6em;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+/* Add a white background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: white;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+h1 {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+/* container */
+.three-columns-grid {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* columns */
+.three-columns-grid > * {
+  padding: 3rem;
+  margin-top: 30px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
