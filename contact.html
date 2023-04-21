@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <title>Contact</title>
+
+    <div style="text-align: left;">
+      <img src="images/hzl.jpg" width="200" alt="Logo" />
+    </div>
+
+    <div class="topnav">
+      <div class="topnav-right">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <br />
+    <br />
+    <h1>Lets collaborate! 👽</h1>
+
+    <!-- Social Media Icons-->
+    <br />
+    <div class="icon-container">
+      <a
+        href="https://www.linkedin.com/in/hazel-greasley-8ba652258/"
+        target="_blank"
+        ><img src="images/linkedinicon.jpg" style="width: 50px; height: 50px;"
+      /></a>
+      <a href="https://www.facebook.com/hazelgreasley" target="_blank"
+        ><img src="images/facebookicon.jpg" style="width: 50px; height: 50px;"
+      /></a>
+      <a href="https://www.instagram.com/hzlgrsly/" target="_blank"
+        ><img src="images/instagramicon.jpg" style="width: 50px; height: 50px;"
+      /></a>
+      <a href="https://www.pinterest.com.au/hzlgrsly/" target="_blank"
+        ><img src="images/pinterest.jpg" style="width: 50px; height: 50px;"
+      /></a>
+    </div>
+    <br />
+    <!-- HTML code for contact form -->
+    <form id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Name" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        required
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Message"
+        required
+      ></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- JavaScript code to display message on form submission -->
+    <script>
+      const form = document.getElementById("contact-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // send form data here (using fetch or ajax)
+        // Success message displayed below
+        const successMsg = document.createElement("p");
+        successMsg.innerText = "Message sent successfully!";
+        form.appendChild(successMsg);
+      });
+    </script>
+  </body>
+</html>
